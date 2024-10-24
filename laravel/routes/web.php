@@ -12,3 +12,4 @@ Route::get('/', function(){
 });
 
 Route::get('/',[Controller::class. 'index']);
+Route::get('/', 'Controller@index');
