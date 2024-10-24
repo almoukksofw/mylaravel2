@@ -13,3 +13,7 @@ Route::get('/', function(){
 
 Route::get('/',[Controller::class. 'index']);
 Route::get('/', 'Controller@index');
+
+Route::get('user/{id}/{surename}', function($id,$surname){
+
+})->where(['id'=>'[0-5]+','surename'=>'[a-z]+' ] );
